@@ -3,94 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Reactive Site</title>
+    <title>Niko // Coder & Pentester</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1>My Awesome Reactive Site</h1>
-            <nav class="main-nav">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+    <canvas id="matrixCanvas"></canvas>
+
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <h1>> Niko_</h1>
+            </header>
+            <div class="card-body">
+                <p><span class="prompt">[niko@mainframe ~]$</span> age</p>
+                <p class="output">13</p>
+
+                <p><span class="prompt">[niko@mainframe ~]$</span> interests</p>
+                <ul class="output">
+                    <li>Pentesting & Cybersecurity</li>
+                    <li>Business & Entrepreneurship</li>
+                    <li>Coding (Web, Python, etc.)</li>
+                    <li>Drawing (sometimes, when inspired!)</li>
+                    <li>Cats (frfr the best!)</li>
+                </ul>
+
+                <p><span class="prompt">[niko@mainframe ~]$</span> status</p>
+                <p class="output">Always learning, always building. Seeking the next challenge.</p>
+            </div>
+            <footer class="card-footer">
+                <p>// Systems nominal. Ready for connection. //</p>
+            </footer>
         </div>
-    </header>
+    </div>
 
-    <main class="site-main">
-        <section id="home" class="hero-section">
-            <div class="container">
-                <h2>Welcome to the Future!</h2>
-                <p>Experience unparalleled reactivity and smooth interactions.</p>
-                <button class="cta-button primary-button">Get Started Now</button>
-            </div>
-        </section>
-
-        <section id="interactive-cards" class="cards-section">
-            <div class="container">
-                <h3>Interactive Elements</h3>
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card-icon">✨</div>
-                        <h4>Shiny Feature 1</h4>
-                        <p>Click me, hover me, I react beautifully. Smooth corners included!</p>
-                        <button class="card-button">Learn More</button>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">🚀</div>
-                        <h4>Fast Interaction 2</h4>
-                        <p>Experience the speed and responsiveness of modern CSS.</p>
-                        <button class="card-button">Explore</button>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">🎨</div>
-                        <h4>Sleek Design 3</h4>
-                        <p>Aesthetically pleasing components that are a joy to use.</p>
-                        <button class="card-button">Discover</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact-form" class="form-section">
-            <div class="container">
-                <h3>Get In Touch</h3>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button primary-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© 2023 My Awesome Reactive Site. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Simple script for active nav link highlighting (can be done with more complex CSS too)
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
